@@ -1,0 +1,12 @@
+<root main_tree_to_execute="BehaviorTree">
+    <!-- ////////// -->
+    <BehaviorTree ID="BehaviorTree">
+        <Inverter>
+            <AlwaysFailure/>
+        </Inverter>
+    </BehaviorTree>
+    <!-- ////////// -->
+    <TreeNodesModel/>
+    <!-- ////////// -->
+</root>
+

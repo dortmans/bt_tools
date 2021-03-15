@@ -1,0 +1,34 @@
+<root main_tree_to_execute="BehaviorTree">
+    <!-- ////////// -->
+    <BehaviorTree ID="BehaviorTree">
+        <ReactiveFallback name="">
+            <Sequence name="">
+                <Condition name="Trigger1" ID="Condition"/>
+                <Action name="Reaction1" ID="Action"/>
+            </Sequence>
+            <Sequence name="">
+                <Condition name="Trigger2" ID="Condition"/>
+                <Action name="Reaction2" ID="Action"/>
+            </Sequence>
+            <SubTree ID="PPA"/>
+        </ReactiveFallback>
+    </BehaviorTree>
+    <!-- ////////// -->
+    <BehaviorTree ID="PPA">
+        <Fallback name="">
+            <Condition name="Post" ID="Condition"/>
+            <Sequence name="">
+                <Condition name="Pre" ID="Condition"/>
+                <Action name="" ID="Action"/>
+            </Sequence>
+        </Fallback>
+    </BehaviorTree>
+    <!-- ////////// -->
+    <TreeNodesModel>
+        <Action ID="Action"/>
+        <Condition ID="Condition"/>
+        <SubTree ID="PPA"/>
+    </TreeNodesModel>
+    <!-- ////////// -->
+</root>
+
